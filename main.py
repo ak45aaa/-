@@ -89,9 +89,9 @@ def checking_problem_answer(ProblemNumber):
             personal_answer = data[1][0]
             
     if map_dict[entry.get()] == personal_answer:
-        label.config(text='{}번의 정답은 {}번 이고 사용자가 체크한 답은 {}번 입니다. 정답입니다!'.format(int(entry.get()), map_dict[entry.get()], personal_answer))
+        label.config(text='{}번의 정답은 {}번 입니다. 사용자가 체크한 답은 {}번 입니다. 정답입니다!'.format(int(entry.get()), map_dict[entry.get()], personal_answer))
     else:
-        label.config(text='{}번의 정답은 {}번 이고 사용자가 체크한 답은 {}번 입니다. 틀렸습니다.'.format(int(entry.get()), map_dict[entry.get()], personal_answer))
+        label.config(text='{}번의 정답은 {}번 입니다. 사용자가 체크한 답은 {}번 입니다. 틀렸습니다.'.format(int(entry.get()), map_dict[entry.get()], personal_answer))
     
     
 entry = tkinter.Entry(window)
